@@ -1,9 +1,9 @@
-body {
-    margin: 0px;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 #container {
-    margin: 3px;
     width: 100%;
     font-family: Roboto, sans-serif;
 
@@ -12,11 +12,13 @@ body {
 #main {
     width: 100%;
     height: 960px;
+    padding-bottom: 0;
+    margin-bottom: 0;
     background-image: url(images/bkg_1.jpg);
     background-repeat: no-repeat;
     background-size:cover;
 }
-#main img {
+nav img {
     position: absolute;
     top: -5px;
     left: 30px;
@@ -49,33 +51,12 @@ nav li a {
    
 }
 
-#second {
-    width: 100;
-    height: 711px;
-    background-color: #383838;;
-}
-
-#onestep {
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    top: 200px;
-    color: #FFFF;
-}
-
-#onestep h1 {
-    font-size: 25px;
-}
-#onestep h2 {
-    font-size: 45px;
-}
-
 #slogan {
     text-align: center;
     text-transform: uppercase;
     color: #FFFF;
     position: relative;
-    top: 400px;
+    top: 500px;
 }
 #slogan h1 {
     font-size: 51px;
@@ -84,48 +65,79 @@ nav li a {
     font-size: 79px;
 }
 
+#button {
+    margin-top: 40px;
+    height: 85px;
+}
+
+#second {
+    width: 100%;
+    height: 711px;
+    background-color: #383838;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#onestep {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    top: 100px;
+    color: #FFFF;
+}
+
+#onestep h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+#onestep h2 {
+    font-size: 45px;
+}
+
 #third {
     width: 100%;
     height: 600px;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 #description {
     text-align: left;
     width: 40%;
-    float: left;
-    
+    padding: 70px;
 }
 
 #description h1 {
     font-size: 25px;
     text-transform: uppercase;
+    margin-bottom: 0px;
 }
 #description h2 {
     font-size: 36px;
     text-transform: uppercase;
+    margin-top: 4px;
 }
 #description p {
     font-size: 20px;
     line-height: 22px;
+    text-align: left;
 }
 
 #product_img {
-    width: 40%;
-    float: right;
-    padding: 10px;
+    padding: 50px;
+
 }
 
 #product_line {
     width: 100%;
-    height: 853px;
+    height: 800px;
     background-color: #FF7630;
+    text-align: center;
 }
 
 #product_line_text {
     position: relative;
     top: 50px;
-    text-align: center;
     color: #FFFF;
 }
 
@@ -147,10 +159,10 @@ nav li a {
     /* top: 40px; */
     margin: auto;
     /* width: 90%; */
-    height: 350px;
-    border: 1px solid black;
-    /* text-align: center; */
+    height: 380px;
+    /* border: 1px solid black; */
 } 
+
 #product_line_items ul {
     list-style-type: none;
     display: flex;
@@ -182,10 +194,6 @@ nav li a {
     margin-top: 0px;
 }
 
-
-
-
-
 .items_text {
     background-color: #FFFF;
 }
@@ -195,11 +203,9 @@ nav li a {
     height: 160px;
 }
 
-
-
 #contact {
     width: 100%;
-    height: 853px;
+    height: 800px;
 }
 #contact h3 {
     color: #292929;
@@ -326,7 +332,6 @@ select {
     width: 300px;
     text-align: center;
     margin: auto;
-    /* margin-left: 47%; */
-    padding-top: 60px;
+    padding: 60px;
 }
 
