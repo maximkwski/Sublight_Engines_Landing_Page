@@ -1,0 +1,265 @@
+body {
+    margin: 0px;
+}
+
+#container {
+    margin: 3px;
+    width: 100%;
+    font-family: Roboto, sans-serif;
+
+}
+
+#main {
+    width: 100%;
+    height: 960px;
+    background-image: url(images/bkg_1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#main img {
+    position: absolute;
+    top: -5px;
+    left: 30px;
+}
+
+
+nav {
+    position: relative;
+    top: 20px;
+    height: 70px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.69);
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding-right: 65px;
+    overflow: auto;
+    float: right;
+}
+li {
+    display: inline;
+   line-height: 70px;
+}
+li a {
+    padding: 15px;
+    color: #FFFF;
+   
+}
+
+#second {
+    width: 100;
+    height: 711px;
+    background-color: #383838;;
+}
+
+#onestep {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    top: 200px;
+    color: #FFFF;
+}
+
+#onestep h1 {
+    font-size: 25px;
+}
+#onestep h2 {
+    font-size: 45px;
+}
+
+#slogan {
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFF;
+    position: relative;
+    top: 400px;
+}
+#slogan h1 {
+    font-size: 51px;
+}
+#slogan h2 {
+    font-size: 79px;
+}
+
+#third {
+    width: 100%;
+    height: 600px;
+    padding: 10px;
+}
+
+#description {
+    text-align: left;
+    width: 40%;
+    float: left;
+    
+}
+
+#description h1 {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+#description h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+}
+#description p {
+    font-size: 20px;
+    line-height: 22px;
+}
+
+#product_img {
+    width: 40%;
+    float: right;
+    padding: 10px;
+}
+
+#product_line {
+    width: 100%;
+    height: 853px;
+    background-color: #FF7630;
+}
+
+#product_line_text {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    color: #FFFF;
+    
+
+}
+
+#product_line_text h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+#product_line_text h3 {
+    font-size: 45px;
+    line-height: 53px;
+    text-transform: uppercase;
+}
+
+#product_line_items {
+
+}
+
+#contact {
+    width: 100%;
+    height: 853px;
+}
+#contact h3 {
+    color: #292929;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+
+}
+#contact h4 {
+    margin-top: 0px;
+    color: #FF7630;
+    text-align: center;
+    font-size: 45px;
+    text-transform: uppercase;
+    
+}
+
+#contactform {
+    margin: auto;
+    height: 489px;
+    width: 500px;
+    
+}
+.name {
+    padding: 10px;
+    width: 475px;
+}
+.email {
+    position: relative;
+    padding: 10px;
+    width: 475px;
+}
+
+.phone {
+    position: absolute;
+    
+
+}
+.lang {
+    position: relative;
+    width: 220px;
+    left: 280px;
+}
+#phone {
+    width: 220px;
+    padding: 10px;
+}
+#lang {
+    padding: 10px;
+}
+select {
+    width: 220px;
+    padding: 5px;
+}
+.submit {
+    
+    position: relative;
+    top: 10px
+}
+
+
+#since {
+    width: 100%;
+    height: 254px;
+    background-color: #292929;
+}
+
+#since h3 {
+    font-size: 45px;
+    color:#FF7630;
+    float: left;
+}
+
+#since img {
+    float: right;
+    
+}
+
+#footer {
+    width: 100%;
+    height: 300px;
+    clear: both;
+}
+#address1 h3, #address2 h3 {
+    font-size: 15px;
+    color: #FF7630;
+}
+#address1 p, #address2 p {
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+#address1 {
+    width: 25%;
+    float: left;
+    text-align: left;
+    padding: 45px;
+}
+#address2 {
+    width: 25%;
+    float: right;
+    text-align: right;
+    padding: 45px;
+}
+
+#copyright {
+    color: #292929;
+    text-align: center;
+    clear: both;
+
+}
+
