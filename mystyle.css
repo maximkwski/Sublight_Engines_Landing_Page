@@ -32,18 +32,18 @@ nav {
 }
 
 
-ul {
+nav ul {
     list-style-type: none;
     margin: 0px;
     padding-right: 65px;
     overflow: auto;
     float: right;
 }
-li {
+nav li {
     display: inline;
    line-height: 70px;
 }
-li a {
+nav li a {
     padding: 15px;
     color: #FFFF;
    
@@ -127,24 +127,75 @@ li a {
     top: 50px;
     text-align: center;
     color: #FFFF;
-    
-
 }
 
 #product_line_text h2 {
     font-size: 25px;
     text-transform: uppercase;
+   
 }
 
 #product_line_text h3 {
+    margin-top: 0px;
     font-size: 45px;
     line-height: 53px;
     text-transform: uppercase;
 }
 
 #product_line_items {
-
+    /* position: relative; */
+    /* top: 40px; */
+    margin: auto;
+    /* width: 90%; */
+    height: 350px;
+    border: 1px solid black;
+    /* text-align: center; */
+} 
+#product_line_items ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+#product_line_items li{
+    /* display:inline-block; */
+    padding: 10px;
+    width: 238.6px;
+    /* width: 13%; */
+    /* padding-left: 50px;
+    padding-right: 50px; */
+}
+
+#product_line_items h4, p {
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    /* background-color: white; */
+}
+
+#product_line_items h4 {
+    margin-bottom: 0px;
+}
+
+#product_line_items p {
+    margin-top: 0px;
+}
+
+
+
+
+
+.items_text {
+    background-color: #FFFF;
+}
+
+#product_line_items img {
+    /* object-fit: contain; */
+    height: 160px;
+}
+
+
 
 #contact {
     width: 100%;
@@ -243,6 +294,14 @@ select {
     line-height: 26px;
 }
 
+#address1 p {
+    text-align: left;
+}
+
+#address2 p {
+    text-align: right;
+}
+
 #address1 {
     width: 25%;
     float: left;
@@ -261,5 +320,13 @@ select {
     text-align: center;
     clear: both;
 
+}
+
+.separator {
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    /* margin-left: 47%; */
+    padding-top: 60px;
 }
 
