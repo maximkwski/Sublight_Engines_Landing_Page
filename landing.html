@@ -38,6 +38,20 @@
                     <img src="logos/separator_gray.svg">
                 </div>
             </div>
+            <div id="services">
+                <div class="services">
+                    <img src="logos/design.svg">
+                    <p>WE DESIGN</p>
+                </div> 
+                <div class="services">
+                    <img src="logos/build.svg">
+                    <p>WE BUILD</p>
+                </div> 
+                <div class="services">
+                    <img src="logos/maintenance.svg">
+                    <p>WE MAINTAIN</p>
+                </div>    
+            </div>
         </div> <!--second-->
         <div id="third">
             <div id="description">
@@ -115,16 +129,23 @@
             </a>
         </div> <!--productline-->
         <div id="contact">
-            <h3>stay in touch with our customer service</h3>
-            <h4>feel free to contact us <br/> for any questions</h4>
+            <div id="stayintouch">
+                <h3>stay in touch with our customer service</h3>
+                <h4>feel free to contact us <br/> for any questions</h4>
+            </div>
+            <div id="contact_separator" class="separator">
+                <img src="logos/separator_black.svg">
+            </div>
             <div id ="contactform">
                 <form method="POST" action="#">
-                    <label for="name">NAME *</label><br/>
-                    <input class="name" type="text" id="name" name="name" placeholder="Enter your full name" size="20" required/><br/>
-
+                    <div id="contact_name">
+                        <label for="name">NAME *</label><br/>
+                        <input class="name" type="text" id="name" name="name" placeholder="Enter your full name" size="20" required/><br/>
+                    </div>
+                    <div id="contact_email">
                     <label for="email">EMAIL ADDRESS *</label><br/>
                     <input class="email" type="email" id="email" name="email" placeholder="yourname@company.com" required/><br/>
-
+                    </div>
                     <div id="phone_and_lang">
                         <div class="phone">
                             <label for="phone">PHONE NUMBER</label><br/>
@@ -142,9 +163,9 @@
                         </div>
                     </div>
 
-                    <div class="submit">
-                        <input type="submit" value="SUBMIT"> 
-                    </div>
+                    <a class="submit">
+                        <input type="image" src="logos/submit_btn.svg"> 
+                    </a>
 
 
                 </form>

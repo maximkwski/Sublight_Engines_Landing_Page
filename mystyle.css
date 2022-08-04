@@ -40,14 +40,17 @@ nav ul {
     padding-right: 65px;
     overflow: auto;
     float: right;
+   
 }
 nav li {
     display: inline;
    line-height: 70px;
+  
 }
 nav li a {
     padding: 15px;
     color: #FFFF;
+    text-decoration: none;
    
 }
 
@@ -92,6 +95,21 @@ nav li a {
 }
 #onestep h2 {
     font-size: 45px;
+}
+
+#services {
+
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    line-height: 29px;
+    color: #FFFF;
+    margin-top: 80px;
+}
+
+.services {
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 #third {
@@ -155,12 +173,8 @@ nav li a {
 }
 
 #product_line_items {
-    /* position: relative; */
-    /* top: 40px; */
     margin: auto;
-    /* width: 90%; */
     height: 380px;
-    /* border: 1px solid black; */
 } 
 
 #product_line_items ul {
@@ -171,19 +185,14 @@ nav li a {
 }
 
 #product_line_items li{
-    /* display:inline-block; */
     padding: 10px;
     width: 238.6px;
-    /* width: 13%; */
-    /* padding-left: 50px;
-    padding-right: 50px; */
 }
 
 #product_line_items h4, p {
     text-align: center;
     font-size: 20px;
     padding: 5px;
-    /* background-color: white; */
 }
 
 #product_line_items h4 {
@@ -206,33 +215,42 @@ nav li a {
 #contact {
     width: 100%;
     height: 800px;
+
+}
+
+#stayintouch {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 80px;
 }
 #contact h3 {
     color: #292929;
-    text-align: center;
-    font-size: 25px;
-    text-transform: uppercase;
+    font-size: 20px;
     margin-bottom: 5px;
 
 }
 #contact h4 {
     margin-top: 0px;
     color: #FF7630;
-    text-align: center;
-    font-size: 45px;
-    text-transform: uppercase;
-    
+    font-size: 40px;  
 }
 
 #contactform {
     margin: auto;
-    height: 489px;
+    height: 400px;
     width: 500px;
-    
+    font-size: 12px;
 }
+
+#contact_name, #contact_email, #phone_and_lang {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 .name {
     padding: 10px;
     width: 475px;
+
 }
 .email {
     position: relative;
@@ -242,8 +260,6 @@ nav li a {
 
 .phone {
     position: absolute;
-    
-
 }
 .lang {
     position: relative;
@@ -262,32 +278,31 @@ select {
     padding: 5px;
 }
 .submit {
-    
     position: relative;
-    top: 10px
+    top: 45px;
 }
-
 
 #since {
     width: 100%;
     height: 254px;
     background-color: #292929;
+    display: flex;
+    justify-content: center;
 }
 
 #since h3 {
     font-size: 45px;
     color:#FF7630;
-    float: left;
+    padding: 80px;
 }
 
 #since img {
-    float: right;
-    
+    padding: 40px;
 }
 
 #footer {
     width: 100%;
-    height: 300px;
+    height: 280px;
     clear: both;
 }
 #address1 h3, #address2 h3 {
@@ -325,7 +340,12 @@ select {
     color: #292929;
     text-align: center;
     clear: both;
+    padding-top: 35px;
 
+}
+
+#copyright p {
+    font-size: 12px;
 }
 
 .separator {
@@ -333,5 +353,9 @@ select {
     text-align: center;
     margin: auto;
     padding: 60px;
+}
+
+#contact_separator {
+    padding-bottom: 30px;
 }
 
