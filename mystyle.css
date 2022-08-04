@@ -2,10 +2,21 @@
     margin: 0;
     padding: 0;
 }
+@font-face {
+    font-family: myRoboto;
+    /* src: url('/fonts/Roboto-Bold.ttf')  format('truetype'); */
+    src: url('/fonts/Roboto-Regular.ttf')  format('truetype');
+  }
+
+@font-face {
+    font-family: Roboto-bold;
+    src: url('/fonts/Roboto-Bold.ttf')  format('truetype');
+  }
+
 
 #container {
     width: 100%;
-    font-family: Roboto, sans-serif;
+    font-family: myRoboto, sans-serif;
 
 }
 
@@ -40,8 +51,8 @@ nav ul {
     padding-right: 65px;
     overflow: auto;
     float: right;
-   
 }
+
 nav li {
     display: inline;
    line-height: 70px;
@@ -60,6 +71,7 @@ nav li a {
     color: #FFFF;
     position: relative;
     top: 500px;
+    font-family: Roboto-bold;
 }
 #slogan h1 {
     font-size: 51px;
@@ -92,9 +104,11 @@ nav li a {
 #onestep h1 {
     font-size: 25px;
     margin-bottom: 10px;
+    font-family: Roboto-bold;
 }
 #onestep h2 {
     font-size: 45px;
+    font-family: Roboto-bold;
 }
 
 #services {
@@ -105,6 +119,11 @@ nav li a {
     line-height: 29px;
     color: #FFFF;
     margin-top: 80px;
+    font-family: Roboto-bold;
+}
+
+#services p {
+    padding-top: 20px;
 }
 
 .services {
@@ -123,17 +142,20 @@ nav li a {
     text-align: left;
     width: 40%;
     padding: 70px;
+    padding-top: 100px;
 }
 
 #description h1 {
     font-size: 25px;
     text-transform: uppercase;
     margin-bottom: 0px;
+    font-family: Roboto-bold;
 }
 #description h2 {
     font-size: 36px;
     text-transform: uppercase;
     margin-top: 4px;
+    font-family: Roboto-bold;
 }
 #description p {
     font-size: 20px;
@@ -162,6 +184,7 @@ nav li a {
 #product_line_text h2 {
     font-size: 25px;
     text-transform: uppercase;
+    
    
 }
 
@@ -170,6 +193,7 @@ nav li a {
     font-size: 45px;
     line-height: 53px;
     text-transform: uppercase;
+    font-family: Roboto-bold;
 }
 
 #product_line_items {
@@ -187,6 +211,7 @@ nav li a {
 #product_line_items li{
     padding: 10px;
     width: 238.6px;
+    
 }
 
 #product_line_items h4, p {
@@ -197,10 +222,13 @@ nav li a {
 
 #product_line_items h4 {
     margin-bottom: 0px;
+    font-family: Roboto-bold;
+    padding: 15px;
+    padding-bottom: 0px;
 }
 
 #product_line_items p {
-    margin-top: 0px;
+    padding-bottom: 10px;
 }
 
 .items_text {
@@ -210,6 +238,10 @@ nav li a {
 #product_line_items img {
     /* object-fit: contain; */
     height: 160px;
+}
+
+.product_line_li {
+    filter: drop-shadow(0px 8px 11px rgba(0, 0, 0, 0.25));
 }
 
 #contact {
@@ -222,10 +254,11 @@ nav li a {
     text-align: center;
     text-transform: uppercase;
     padding-top: 80px;
+    font-family: Roboto-bold;
 }
 #contact h3 {
     color: #292929;
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 5px;
 
 }
@@ -250,12 +283,14 @@ nav li a {
 .name {
     padding: 10px;
     width: 475px;
+    height: 25px;
 
 }
 .email {
     position: relative;
     padding: 10px;
     width: 475px;
+    height: 25px;
 }
 
 .phone {
@@ -265,14 +300,21 @@ nav li a {
     position: relative;
     width: 220px;
     left: 280px;
+
+
 }
 #phone {
     width: 220px;
     padding: 10px;
+    height: 20px;
 }
 #lang {
     padding: 10px;
+    height: 43px;
+  
 }
+
+
 select {
     width: 220px;
     padding: 5px;
@@ -288,19 +330,26 @@ select {
     background-color: #292929;
     display: flex;
     justify-content: center;
+    align-items: center;
+    
 }
 
 #since h3 {
     font-size: 45px;
     color:#FF7630;
-    padding: 80px;
+    padding-right: 20px;
+    font-family: Roboto-bold;
+
 }
 
 #since img {
-    padding: 40px;
+    height:120px;
+    padding-left: 20px;
+    /* padding: 40px; */
 }
 
 #footer {
+    padding-top: 30px;
     width: 100%;
     height: 280px;
     clear: both;
@@ -308,11 +357,14 @@ select {
 #address1 h3, #address2 h3 {
     font-size: 15px;
     color: #FF7630;
+    font-family: Roboto-bold;
 }
 #address1 p, #address2 p {
     text-transform: uppercase;
     font-size: 22px;
     line-height: 26px;
+    padding: 0;
+    padding-top: 10px;
 }
 
 #address1 p {
@@ -334,6 +386,10 @@ select {
     float: right;
     text-align: right;
     padding: 45px;
+}
+
+.phonenumber {
+    font-family: Roboto-bold;
 }
 
 #copyright {

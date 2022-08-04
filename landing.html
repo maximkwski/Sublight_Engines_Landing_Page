@@ -77,8 +77,8 @@
             </div>
             <div id="product_line_items">
                 <ul>
-                    <li class="product_line_li">
-                        <div id="safety">
+                    <li>
+                        <div class="product_line_li" id="safety">
                             <img src="images/safety.png" >
                             <div class="items_text">
                                     <h4>SAFETY</h4>
@@ -86,8 +86,8 @@
                                 </div>
                          </div>
                     </li>
-                    <li class="product_line_li">
-                        <div id="cab">
+                    <li>
+                        <div  class="product_line_li" id="cab">
                             <img src="images/cab.png">
                             <div class="items_text">
                                 <h4>CAB</h4>
@@ -95,8 +95,8 @@
                              </div>
                         </div>
                     </li>   
-                    <li class="product_line_li">
-                        <div id="door">
+                    <li>
+                        <div class="product_line_li" id="door">
                             <img src="images/door.png">
                             <div class="items_text">
                                 <h4>DOOR</h4>
@@ -104,8 +104,8 @@
                             </div>
                         </div>
                     </li>
-                    <li class="product_line_li">
-                        <div id="mechanics">
+                    <li>
+                        <div class="product_line_li" id="mechanics">
                             <img src="images/mechanics.png">
                             <div class="items_text">
                                 <h4>MECHANICS</h4>
@@ -113,8 +113,8 @@
                             </div>
                         </div>
                     </li>
-                    <li class="product_line_li">
-                        <div id="hatch">
+                    <li>
+                        <div class="product_line_li" id="hatch">
                             <img src="images/hatch.png">
                             <div class="items_text">
                                 <h4>HOISTWAY/HATCH</h4>
@@ -137,22 +137,22 @@
                 <img src="logos/separator_black.svg">
             </div>
             <div id ="contactform">
-                <form method="POST" action="#">
+                <form id="form"  method="POST" action="#">
                     <div id="contact_name">
-                        <label for="name">NAME *</label><br/>
+                        <label for="name"><strong>NAME *</strong></label><br/>
                         <input class="name" type="text" id="name" name="name" placeholder="Enter your full name" size="20" required/><br/>
                     </div>
                     <div id="contact_email">
-                    <label for="email">EMAIL ADDRESS *</label><br/>
+                    <label for="email"><strong>ADDRESS *</strong> </label><br/>
                     <input class="email" type="email" id="email" name="email" placeholder="yourname@company.com" required/><br/>
                     </div>
                     <div id="phone_and_lang">
                         <div class="phone">
-                            <label for="phone">PHONE NUMBER</label><br/>
+                            <label for="phone"><strong>NUMBER</strong></label><br/>
                             <input type="tel" id="phone" name="phone" placeholder="0 (000) 000 -0000" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" />
                         </div>
                         <div class="lang">
-                            <label for="lang">PREFERRED LANGUAGE</label><br/>
+                            <label for="lang"><strong>PREFERRED LANGUAGE</strong></label><br/>
                             <select id="lang" name="lang">
                                 <option selected value="">Select</option>
                                 <option value="spanish">Spanish</option>
@@ -181,15 +181,13 @@
             <div id="address1">
                 <h3>UNITED STATES OFFICE</h3>
                 <p>456 harlem boulevard <br/>
-                    saratoga springs, ny, usa <br/>
-                    <strong>1 999 543-4567</strong>
+                    saratoga springs, ny, usa <br/><span class="phonenumber">1 999 543-4567</span>
                 </p>
             </div>
             <div id="address2">
                 <h3>CANADA'S OFFICE</h3>
                 <p>23895 bradshaw boulevard <br/>
-                    kingston, ont, ca<br/>
-                    <strong>1 999 543-4567</strong> 
+                    kingston, ont, ca<br/><span class="phonenumber">1 999 543-4567</span>
                 </p>
             </div>
 
