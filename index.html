@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width", initial-scale="1">
     <link rel="stylesheet" href="mystyle.css">
     <link rel="icon" type="image/x-icon" href="/logos/favicon.ico">
     <title>Sublight Engines</title>
@@ -13,7 +13,7 @@
         <div id="main">
             <div id="header">  
                 <nav>
-                    <img src="logos/logo_sublight.svg">
+                    <img id="navimg" src="logos/logo_sublight.svg">
                     <ul>
                         <li><a href="#second">OUR SERVICES</a></li>
                         <li><a href="#product_line">OUR PRODUCTS</a></li>
@@ -73,7 +73,7 @@
                 <h2>need more for your fleet of elevators </h2>
                 <h3>all our products are made <br/> with heart and soul</h3>
             </div>
-            <div class="separator">
+            <div class="separator" id="products_separator">
                 <img src="logos/separator_black.svg">
             </div>
             <div id="product_line_items">
@@ -125,9 +125,11 @@
                     </li>
                     </ul>
             </div> <!--product line items -->
-            <a>
-                <input type="image" src="logos/download.svg">
-            </a>
+            <div id="download_btn">
+                <a>
+                    <input type="image" src="logos/download.svg">
+                </a>
+            </div>
         </div> <!--productline-->
         <div id="contact">
             <div id="stayintouch">
@@ -163,10 +165,7 @@
                             </select><br/>
                         </div>
                     </div>
-
-                    <a class="submit">
-                        <input type="image" src="logos/submit_btn.svg"> 
-                    </a>
+                     <button id="submit_btn">SUBMIT</button>
 
 
                 </form>
@@ -179,17 +178,19 @@
         
 
         <footer id="footer">
-            <div id="address1">
-                <h3>UNITED STATES OFFICE</h3>
-                <p>456 harlem boulevard <br/>
-                    saratoga springs, ny, usa <br/><span class="phonenumber">1 999 543-4567</span>
-                </p>
-            </div>
-            <div id="address2">
-                <h3>CANADA'S OFFICE</h3>
-                <p>23895 bradshaw boulevard <br/>
-                    kingston, ont, ca<br/><span class="phonenumber">1 999 543-4567</span>
-                </p>
+            <div class="addresses">
+                <div id="address1">
+                    <h3>UNITED STATES OFFICE</h3>
+                    <p>456 harlem boulevard <br/>
+                        saratoga springs, ny, usa <br/><span class="phonenumber">1 999 543-4567</span>
+                    </p>
+                </div>
+                <div id="address2">
+                    <h3>CANADA'S OFFICE</h3>
+                    <p>23895 bradshaw boulevard <br/>
+                        kingston, ont, ca<br/><span class="phonenumber">1 999 543-4567</span>
+                    </p>
+                </div>
             </div>
 
             <div id="copyright">
