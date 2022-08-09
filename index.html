@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width", initial-scale="1">
     <link rel="stylesheet" href="mystyle.css">
     <link rel="icon" type="image/x-icon" href="/logos/favicon.ico">
+    <script src="myscripts.js"></script>
     <title>Sublight Engines</title>
 </head>
 <body>
@@ -14,12 +15,17 @@
             <div id="header">  
                 <nav>
                     <img id="navimg" src="logos/logo_sublight.svg">
-                    <ul>
+                    <ul class="navbar_links">
                         <li><a href="#second">OUR SERVICES</a></li>
                         <li><a href="#product_line">OUR PRODUCTS</a></li>
                         <li><a href="#contact">SERVICE REQUEST</a></li>
                         <li><a href="#footer">CONTACT US</a></li>
                     </ul>
+                    <a href="#" class="toggle-button">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>
                 </nav>
                 
             </div> <!--header-->
@@ -35,7 +41,7 @@
             <div id="onestep">
                 <h1>one-stop for your elevator needs</h1>
                 <h2>one step closer to success</h2>
-                <div class="separator">
+                <div class="separator" id="onestep_separator">
                     <img src="logos/separator_gray.svg">
                 </div>
             </div>
@@ -45,7 +51,7 @@
                     <p>WE DESIGN</p>
                 </div> 
                 <div class="services">
-                    <img src="logos/build.svg">
+                    <img id="webuild" src="logos/build.svg">
                     <p>WE BUILD</p>
                 </div> 
                 <div class="services">
@@ -126,9 +132,7 @@
                     </ul>
             </div> <!--product line items -->
             <div id="download_btn">
-                <a>
-                    <input type="image" src="logos/download.svg">
-                </a>
+                    <button id="download">DOWNLOAD OUR CATALOG</button>
             </div>
         </div> <!--productline-->
         <div id="contact">
