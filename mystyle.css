@@ -434,6 +434,7 @@ select {
 
 #download_btn {
     padding: 10px;
+    z-index: 999;
 }
 
 #download {
@@ -476,6 +477,7 @@ select {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+        z-index: 999;
     }
 
     .navbar_links  {
