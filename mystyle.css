@@ -133,8 +133,7 @@ nav li a {
 }
 
 .services {
-    padding-left: 70px;
-    padding-right: 70px;
+ padding: 10px 70px 30px 70px;
 }
 
 #webuild{
@@ -431,6 +430,10 @@ select {
     cursor: pointer;
     margin-top: 25px;
     margin-bottom: 10px;
+}
+
+#download_btn {
+    padding: 10px;
 }
 
 #download {
@@ -798,6 +801,75 @@ select {
 
     #since h3 {
         font-size: 53px;
+    }
+
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 1280px) {
+    nav {
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        align-content: space-between;
+        
+    }
+    #navimg {
+        width: 30%;
+        position: relative;
+        top: 2px;
+    }
+
+    .navbar_links {
+        width: 70%;
+        padding: 10px 20px 0px 50px;
+        text-align: right;
+        
+    }
+
+    nav li {
+        line-height: 30px;
+        font-size: 13px;
+    }
+
+    nav li a{
+        padding: 10px;
+    }
+
+
+    #services {
+        flex-wrap: wrap;
+    }
+    #third {
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
+
+    #product_line {
+        height: auto;
+    }   
+    #product_line_items ul {
+        flex-wrap: wrap;
+    }
+    #product_line_items {
+        height: auto;
+    }
+
+    #description {
+        text-align: left;
+        padding-bottom: 50px;
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    #since h3{
+        padding: 20px;
+        text-align: center;
+    }
+
+    #since img {
+        padding: 20px;
     }
 
 }
