@@ -280,7 +280,6 @@ nav li a {
 
 #contactform {
     margin: auto;
-    height: 400px;
     width: 500px;
     font-size: 12px;
 }
@@ -310,6 +309,7 @@ nav li a {
     position: relative;
     width: 220px;
     left: 280px;
+    
 
 
 }
@@ -321,6 +321,7 @@ nav li a {
 #lang {
     padding: 10px;
     height: 43px;
+    
   
 }
 
@@ -332,6 +333,7 @@ select {
 .submit {
     position: relative;
     top: 45px;
+    
 }
 
 #since {
@@ -876,8 +878,33 @@ select {
 
 }
 
+/*=====================form validation==========================*/
 
+#error {
+    padding: 10px;
+    color: red;
+    text-align: center;
+}
 
+input:valid {
+    /* box-shadow: 0 0 5px 1px greenyellow; */
+    
+}
 
+input:invalid {
+    box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+    box-shadow: none;
+}
+
+select:valid {
+    /* box-shadow: 0 0 5px 1px greenyellow; */
+}
+
+select:invalid {
+    box-shadow: 0 0 5px 1px red
+}
 
 
