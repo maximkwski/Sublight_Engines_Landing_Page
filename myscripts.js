@@ -14,26 +14,29 @@ const phone = document.getElementById('phone')
 const lang = document.getElementById('lang')
 const errorElement = document.getElementById('error')
 
+
+
 form.addEventListener('submit', (e) => { 
+    let validEmail = /^\S+@\S+\.\S+$/
     let messages = []
-    if (nname.value === '' || nname.value == null) {
-        messages.push("Name is required")
-    }
-    if (nname.value.length < 3 && nname.value.length >= 1) {
-        messages.push('Name is too short')
+    // if (nname.value === '' || nname.value == null) {
+    //     messages.push("Name is required")
+    // }
+    // if (nname.value.length < 3 && nname.value.length >= 1) {
+    //     messages.push('Name is too short')
+    // }
+
+    if (email.value.match(/^\S+@\S+\.\S+$/)) {
+        messages.push ('Please enter a valid email address')
     }
 
-    if (email.value.length < 8) {
-        messages.push ('Email must be longer than 8 characters')
-    }
-
-    if (lang.value === '') {
-        messages.push ("Please select a language.")
-    }
+    // if (lang.value === '') {
+    //     messages.push ("Please select a language.")
+    // }
 
     if (messages.length > 0){
         e.preventDefault()
         errorElement.innerText = messages.join(', ')
     }
-
+    
 }) 

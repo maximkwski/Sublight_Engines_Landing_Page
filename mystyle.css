@@ -884,7 +884,9 @@ select {
     padding: 10px;
     color: red;
     text-align: center;
+ 
 }
+
 
 input:valid {
     /* box-shadow: 0 0 5px 1px greenyellow; */
