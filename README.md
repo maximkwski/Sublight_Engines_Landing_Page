@@ -27,3 +27,11 @@ You will have a mobile version of the page with hamburger menu and fixed nav-bar
 # EmailJS
 
 Added email comfirmation message with contact information when the form is submitted. 
+
+
+# Lighthouse 
+
+With a Lighthouse tool I was able to make few improvements of the web page. 
+Added meta tag with description of our product. Added "alt" attributes for image tags and some input tags that include image. With that i was able to increase a score for SEO and Accessibility. 
+
+![alt text](images/lighthouse.png)
