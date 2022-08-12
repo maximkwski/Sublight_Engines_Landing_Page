@@ -17,3 +17,13 @@ src: url('../../Sublight_Engines_Landing_Page/fonts/Roboto-Bold.ttf')  format('t
     font-family: Roboto-bold;
     src: url('fonts/Roboto-Bold.ttf')  format('truetype');
   }
+
+# Responsive design
+
+* Added media queries for device width: 375px and 576px; 
+You will have a mobile version of the page with hamburger menu and fixed nav-bar and download catalog button for the max device width: 768px;
+* Third media query is from 769px - 1280x width have regular nav. bar links and everything almost like desktop version. 
+
+# EmailJS
+
+Added email comfirmation message with contact information when the form is submitted. 
