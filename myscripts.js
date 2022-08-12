@@ -14,35 +14,40 @@ const phone = document.getElementById('phone')
 const lang = document.getElementById('lang')
 const errorElement = document.getElementById('error')
 
-pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+
 
 form.addEventListener('submit', (e) => { 
     let messages = []
-    // if (nname.value === '' || nname.value == null) {
-        //     messages.push("Name is required")
-        // }
-        // if (nname.value.length < 3 && nname.value.length >= 1) {
-            //     messages.push('Name is too short')
-            // }
+    let validName =  /^[a-zA-Z\s]*$/
+    if (nname.value === '' || nname.value == null) {
+            messages.push("Name is required")
+        }
+        if (validName.test(nname.value)) {
+                messages.push('Please enter your full name')
+            }
             
-    
-    if (/^\S+@\S+\.\S+$/.test(email.value) === false) {
-        messages.push('Please enter a valid email pleaaseeee')
+    let validEmail = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
+    if (validEmail.test(email.value) === false) {
+        messages.push('Please enter a valid email')
     }
 
-
-    let validPhone = /[0-9]{3}-[0-9]{3}-[0-9]{4}/;
-    
-    if (/[0-9]{3}-[0-9]{3}-[0-9]{4}/.test(phone.value) === false) {
+    let validPhone = /\d{3}[ -]?\d{3}[ -]?\d{4}/;
+    if (validPhone.test(phone.value) === false) {
         messages.push("Enter a phone number in a valid format")
     }
-    // if (lang.value === '') {
-    //     messages.push ("Please select a language.")
-    // }
+    if (lang.value === '') {
+        messages.push ("Please select a language.")
+    }
 
     if (messages.length > 0){
         e.preventDefault()
         errorElement.innerText = messages.join(', ')
-        // return false;
+    }
+    else {
+        myAlert()
     }
 }) 
+
+function myAlert() {
+    alert("Your form has been submitted!");
+  }

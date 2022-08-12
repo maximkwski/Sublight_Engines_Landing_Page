@@ -282,6 +282,7 @@ nav li a {
     margin: auto;
     width: 500px;
     font-size: 12px;
+    padding-bottom: 20px;
 }
 
 #contact_name, #contact_email, #phone_and_lang {
@@ -883,14 +884,7 @@ select {
 #error {
     padding: 10px;
     color: red;
-    text-align: center;
- 
-}
-
-
-input:valid {
-    /* box-shadow: 0 0 5px 1px greenyellow; */
-    
+    text-align: center; 
 }
 
 input:invalid {
