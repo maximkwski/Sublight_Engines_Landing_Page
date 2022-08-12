@@ -144,7 +144,7 @@
                 <img src="logos/separator_black.svg">
             </div>
             <div id="contactform">
-                <form id="form" novalidate>
+                <form id="form"  method="POST" action="/" novalidate>
                     
                     <div id="contact_name">
                         <label for="name"><strong>NAME *</strong></label><br/>
@@ -157,7 +157,7 @@
                     <div id="phone_and_lang">
                         <div class="phone">
                             <label for="phone"><strong>NUMBER</strong></label><br/>
-                            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" /><br/>
+                            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" /><br/>
                         </div>
                         <div class="lang">
                             <label for="lang"><strong>PREFERRED LANGUAGE</strong></label><br/>
@@ -171,7 +171,7 @@
                         </div>
                     </div>
                     <div id="error"></div>
-                     <button id="submit_btn">SUBMIT</button>
+                     <button id="submit_btn" type="submit">SUBMIT</button>
 
 
                 </form>
